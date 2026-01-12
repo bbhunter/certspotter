@@ -1,5 +1,13 @@
 # Change Log
 
+## v0.24.0 (2026-01-12)
+- Add certspotter-authorize command, which lets you mark legitimate certificates
+  as authorized so you don't get notified about them.
+- Deduplicate certificates and their corresponding precertificates, so you
+  receive only one notification when both are logged in CT.
+- When `-no_save` is used, write certificates to a temporary location so scripts
+  can access them via `$CERT_FILENAME`, `$JSON_FILENAME`, and `$TEXT_FILENAME`.
+
 ## v0.23.0 (2025-12-05)
 - Avoid sending queries to logs in excess of the log's rate limit, if known.
   This should improve monitoring of the TrustAsia logs.
