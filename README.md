@@ -7,7 +7,7 @@ a database. It's also more robust, since it uses a special certificate parser
 that ensures it won't miss certificates.
 
 Cert Spotter is available as a hosted service by SSLMate that also
-provides monitoring for expired and incorrectly-installed certificates,
+provides monitoring for expiring and incorrectly-installed certificates,
 Slack notifications, and a Web dashboard for tracking all of your
 certificates.  Visit <https://sslmate.com/certspotter> to sign up.
 
